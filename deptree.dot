@@ -1,0 +1,26 @@
+digraph "generated-graph" {
+ graph [ranksep=1, rankdir=LR];
+  "root" [label="root" color=dodgerblue3 shape=rectangle style=rounded];
+  "github.com/scala/scala-lang" [label="github.com/scala/scala-lang" color=aquamarine4 shape=rectangle style=rounded];
+  "github.com/softwaremill/tapir/" [label="github.com/softwaremill/tapir/" color=chartreuse4 shape=rectangle style=rounded];
+
+    {
+    rank=same;
+    "root";
+  }
+  {
+    rank=same;
+    "github.com/scala/scala-lang";
+  }
+  {
+    rank=same;
+    "github.com/softwaremill/tapir/";
+  }
+
+    "root" -> {
+    "github.com/scala/scala-lang"
+  };
+  "github.com/scala/scala-lang" -> {
+    "github.com/softwaremill/tapir/"
+  };
+}
